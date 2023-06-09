@@ -1,0 +1,9 @@
+*.json
+*.ipynb_checkpoints
+*.ipynb
+*.txt
+*.csv
+*.vscode
+*.pytest_cache
+build
+__pycache__

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools","setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upwork_scraper"
+version = "1.0.0"
+authors = [
+    {name = "Falowo Gbolahan", email = "falowogbolahan@gmail.com"},
+]
+
+
+description = "My package description"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["one", "two"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+]
+
+
+dependencies = [
+    "requests",
+]
+
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["upwork_scraper"]
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[project.scripts]
+upwork_scraper = "upwork_scraper.scraper:entry"
